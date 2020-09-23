@@ -1,4 +1,3 @@
-<style>
 .videojs .vjs-play-progress, .vjs-big-play-button, .vjs-slider-bar, .vjs-volume-bar{
     background-color: #39fff0 !important;
 }
@@ -53,9 +52,3 @@ transform:translateY(0em) !important;
 opacity:1 !important;
 
 }
-
-/*.vjs-play-progress{
-postion: absolute;
-top: 20px;}*/
-
-</style>
