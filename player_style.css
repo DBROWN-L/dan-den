@@ -5,4 +5,57 @@
 .video-js .vjs-volume-level{
   background-color: yellow;
 }
+.video-js .vjs-tech {
+top: -33px !important;}
+
+.vjs-poster{
+top: -33px !important;}
+
+.vjs-text-track-display{
+z-index: 900;
+}
+
+.vjs-control-bar {
+display: flex !important;
+height: 84px !important;
+background-color: transparent !important;
+background-image: URL("bottom_bar.png");
+bottom: 1px !important;
+}
+
+video::-webkit-media-text-track-display{
+transform:translateY(0em) !important;
+}
+
+.video-js.vjs-user-inactive.vjs-playing video::-webkit-media-text-track-display{
+transform:translateY(0em) !important;
+}
+
+.video-js .vjs-fullscreen-control{
+display:none !important;}
+
+.video-js .vjs-picture-in-picture-control{
+display:none !important;}
+
+.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-wVjtjKYq4_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar,.bc-player-wVjtjKYq4_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible){
+visibility:visible;
+opacity:1;
+-webkit-backface-visibility:hidden;
+-webkit-transform:translateY(0em) !important;
+-moz-transform:translateY(0em) !important;
+-ms-transform:translateY(0em) !important;
+-o-transform:translateY(0em) !important;
+transform:translateY(0em) !important;
+}
+
+
+.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-wVjtjKYq4_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-wVjtjKYq4_default.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control{
+opacity:1 !important;
+
+}
+
+/*.vjs-play-progress{
+postion: absolute;
+top: 20px;}*/
+
 </style>
