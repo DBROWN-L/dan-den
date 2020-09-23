@@ -1,0 +1,8 @@
+<style>
+.videojs .vjs-play-progress, .vjs-big-play-button, .vjs-slider-bar, .vjs-volume-bar{
+    background-color: #39fff0 !important;
+}
+.video-js .vjs-volume-level{
+  background-color: yellow;
+}
+</style>
