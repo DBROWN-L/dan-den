@@ -14,7 +14,7 @@ z-index: 900;
 display: flex !important;
 height: 84px !important;
 background-color: transparent !important;
-background-image: URL("bottom_bar.png");
+background-image: URL("https://github.com/DBROWN-L/dan-den/blob/master/bottom_bar.png");
 bottom: 1px !important;
 }
 
