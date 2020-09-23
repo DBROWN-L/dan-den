@@ -1,0 +1,7 @@
+<style>
+.video-js .vjs-fullscreen-control{
+display:none !important;}
+
+.video-js .vjs-picture-in-picture-control{
+display:none !important;}
+</style>
