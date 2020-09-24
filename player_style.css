@@ -1,9 +1,5 @@
-.videojs .vjs-play-progress, .vjs-big-play-button, .vjs-slider-bar, .vjs-volume-bar{
-    background-color: #39fff0 !important;
-}
-.video-js .vjs-volume-level{
-  background-color: yellow;
-}
+<style>
+
 .video-js .vjs-tech {
 top: -33px !important;}
 
@@ -18,7 +14,7 @@ z-index: 900;
 display: flex !important;
 height: 84px !important;
 background-color: transparent !important;
-background-image: URL("bottom_bar.png");
+background-image: URL("https://github.com/DBROWN-L/dan-den/blob/master/bottom_bar.png");
 bottom: 1px !important;
 }
 
@@ -52,3 +48,9 @@ transform:translateY(0em) !important;
 opacity:1 !important;
 
 }
+
+/*.vjs-play-progress{
+postion: absolute;
+top: 20px;}*/
+
+</style>
