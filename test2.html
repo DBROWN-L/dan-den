@@ -1,9 +1,41 @@
 <div id="output"></div>
 
 <script>
-const name = localStorage.getItem('username');
+function renderGreeting() {
+    const el = document.getElementById('output');
+    if (!el) return;
 
-if (name) {
-    document.getElementById('output').textContent = `Hello, ${name}`;
+    const name = localStorage.getItem('username');
+
+    if (name) {
+        el.textContent = `You have just earned your certificate, ${name}`;
+        console.log("Rendered greeting:", name);
+    }
 }
+
+// Run on initial load (fixes refresh)
+document.addEventListener('DOMContentLoaded', renderGreeting);
+
+// Also run immediately in case DOM is already ready
+renderGreeting();
+
+// Track URL changes (TI SPA navigation)
+let currentUrl = location.href;
+
+new MutationObserver(() => {
+    if (location.href !== currentUrl) {
+        currentUrl = location.href;
+
+        console.log('URL changed:', currentUrl);
+
+        // Give TI time to inject new page DOM
+        setTimeout(renderGreeting, 100);
+    }
+}).observe(document.body, {
+    subtree: true,
+    childList: true
+});
 </script>
+
+
+
