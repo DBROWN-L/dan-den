@@ -1,0 +1,9 @@
+<div id="output"></div>
+
+<script>
+const name = localStorage.getItem('username');
+
+if (name) {
+    document.getElementById('output').textContent = `Hello, ${name}`;
+}
+</script>
