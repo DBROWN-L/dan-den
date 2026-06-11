@@ -1,0 +1,13 @@
+<label for="username">Name:</label>
+<input type="text" id="username">
+
+<button id="saveBtn">Continue</button>
+
+<script>
+document.getElementById('saveBtn').addEventListener('click', function () {
+    const name = document.getElementById('username').value;
+    localStorage.setItem('username', name);
+    console.log("I just typed in: " + username);
+
+});
+</script>
