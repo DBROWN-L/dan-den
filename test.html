@@ -1,13 +1,35 @@
-<label for="username">Name:</label>
-<input type="text" id="username">
+<label for="users_name">Name:</label>
+<input type="text" id="users_name" autocomplete="off">
 
-<button id="saveBtn">Continue</button>
+<button id="saveBtn">Save</button>
 
 <script>
-document.getElementById('saveBtn').addEventListener('click', function () {
-    const name = document.getElementById('username').value;
-    localStorage.setItem('username', name);
-    console.log("I just typed in: " + name);
+function init() {
+    const btn = document.getElementById('saveBtn');
+    const field = document.getElementById('users_name');
 
+    if (!btn || !field) {
+        console.log("Waiting for DOM...");
+        return;
+    }
+
+    btn.addEventListener('click', function () {
+        const name = field.value;
+        localStorage.setItem('username', name);
+        console.log("Saved:", name);
+    });
+
+    // hydrate on load
+    const saved = localStorage.getItem('username');
+    if (saved) field.value = saved;
+}
+
+// Try immediately
+init();
+
+// And also retry after LMS DOM injection
+new MutationObserver(init).observe(document.body, {
+    childList: true,
+    subtree: true
 });
 </script>
